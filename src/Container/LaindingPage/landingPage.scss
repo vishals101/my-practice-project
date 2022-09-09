@@ -1,0 +1,70 @@
+@import '../../css/global.scss';
+
+.img-container {
+	.back {
+		bottom: -7%;
+		right: 0;
+		z-index: -1;
+	}
+}
+
+
+@media screen and (max-width: 1366px) {
+    .img-container {
+        text-align: center;
+    }
+	.img-container {
+		.back {
+			left: 11%;
+			right: auto;
+			bottom: -20px;
+		}
+	}
+	.img-container {
+		img {
+			width: 75%;
+		}
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	h1 {
+		font-size: $font-30;
+	}
+}
+@media screen and (max-width: 992px) {
+	body {
+		height: auto;
+	}
+	.landing-container {
+		height: 100%;
+	}
+	.img-container {
+		.back {
+			left: 15%;
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+
+	.img-container {
+		.back {
+			left: 0;
+			bottom: -19%;
+		}
+	}
+	.img-container {
+		img {
+			width: 100%;
+		}
+	}
+	h1 {
+		font-size: $font-24;
+	}
+
+}
+@media screen and (max-width: 360px) {
+	.button-group button {
+		font-size: $font-12;
+	}
+}

@@ -1,0 +1,87 @@
+@import '../../css/global.scss';
+
+.modal-pop {
+	input[type="text"] {
+		&::-webkit-input-placeholder {
+			font-size: $font-13;
+		}
+		&:-ms-input-placeholder {
+			font-size: $font-13;
+		}
+		&::placeholder {
+			font-size: $font-13;
+		}
+	}
+	input[type="email"] {
+		&::-webkit-input-placeholder {
+			font-size: $font-13;
+		}
+		&:-ms-input-placeholder {
+			font-size: $font-13;
+		}
+		&::placeholder {
+			font-size: $font-13;
+		}
+	}
+	input[type="password"] {
+		&::-webkit-input-placeholder {
+			font-size: $font-13;
+		}
+		&:-ms-input-placeholder {
+			font-size: $font-13;
+		}
+	}
+	input[type="passwords"] {
+		&::placeholder {
+			font-size: $font-13;
+		}
+	}
+	h1.main-heading {
+		background-color: $primary_clr;
+		span.modal-heading {
+			font-size: $font-28;
+		}
+		span.step {
+			font-size: $font-14;
+		}
+		span.back-btn {
+			font-size: $font-18;
+		}
+	}
+	border-radius: 10px;
+	overflow: hidden;
+	label {
+		font-size: $font-14;
+	}
+}
+.levels {
+	.selected {
+		right: -10px;
+		top: -10px;
+		background: $selected-gradient;
+	}
+}
+.sentMail .modal-pop {
+    width: 30% !important;
+}
+
+@media screen and (max-width: 767px) {
+	input[type="email"], input[type="password"], input[type="text"], input[type="date"], input[type="number"] {
+		min-height: 40px;
+	}
+
+	.modal-pop {
+		width: 95% !important;
+		overflow-y: scroll;
+		height: 90%;
+	}
+	.modal-pop span.modal-heading {
+		font-size: $font-23 !important;
+	}
+	ul.level-content li:nth-child(odd) {
+		width: 100%;
+	}
+	ul.level-content {
+		justify-content: flex-start !important;
+	}
+}
