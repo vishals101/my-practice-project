@@ -32,7 +32,6 @@ import landing_image from "../../Assets/images/golf_swing.png";
 //     setAccountCreationScreenStep(1);
 //   };
 
-
 //   const handleChildren = () => {
 //     switch (modelName) {
 //       case "Account Creation":
